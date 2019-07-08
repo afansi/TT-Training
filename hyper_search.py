@@ -28,6 +28,7 @@ def main(_):
 
         orion_objective = -val_f1  # -val_acc
 
+    tf.logging.info("FOUND OBJECTIVE: {}".format(orion_objective))
     report_results(
         [dict(
             name='orion_objective',

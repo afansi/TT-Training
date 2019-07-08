@@ -175,7 +175,7 @@ def main_process():
             for k in out_data.keys():
                 mlflow.log_metric(k, out_data[k])
 
-        run_metrics = dict(run.data.metrics)
+        run_metrics = out_data
 
     return run_metrics
 
